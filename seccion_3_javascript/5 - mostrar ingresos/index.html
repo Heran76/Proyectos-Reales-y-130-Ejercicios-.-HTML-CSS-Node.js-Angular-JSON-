@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso usuario</title>
+</head>
+<body>
+    <h1 id="saludar">!Hola como te llamas¡</h1>
+    <input type="text" name="" id="nombre" placeholder="Introduce tu nombre">
+     <button onclick="cambiarnombre()">Aceptar</button>
+
+     <script>
+        function cambiarnombre(){
+             let saludo = document.getElementById("saludar");
+             let inputnombre = document.getElementById("nombre");
+             let mensaje = "Hola te llamas " + inputnombre.value;
+
+             saludo.textContent=mensaje;
+        }
+     </script>
+</body>
+</html>

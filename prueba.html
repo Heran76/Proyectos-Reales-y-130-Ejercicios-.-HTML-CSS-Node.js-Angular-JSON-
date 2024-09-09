@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SettimeOut</title>
+</head>
+<body>
+    <input type="number" name="" id="number" placeholder="introduc el tiempo">
+    <button onclick="tempo()">Enviar</button>
+    <h1 style="color:red" id="aviso">Apagado</h1>
+
+    <audio id="sonido" src="/seccion_javascript/7 - Audio/alarma.mp3"></audio>
+    
+    
+    
+    
+    <script>
+        
+        let timepoUsuario = document.getElementById("number")
+        let aviso=document.getElementById("aviso")
+        let sonido = document.getElementById("sonido")
+        function tempo(){
+            setTimeout(acabo, 1000*timepoUsuario.value)
+        }
+        
+        function acabo(){
+            aviso.textContent="Encendio"
+            aviso.style.color="green";
+            sonido.play();
+        }
+    </script>
+</body>
+</html>
