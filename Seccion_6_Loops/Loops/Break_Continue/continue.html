@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Continue</title>
+    <title>for of break</title>
 </head>
 <body>
     <script>
-        let miArray = [9, 5, 6, 2, 7];
- 
-function testLoop() {
-    for (let numero of miArray) {
-        if (numero <= 5) {
-            continue;
+        
+        let miArray = [1,2,25,95,50,100,20,40];
+        
+        for(let letra of miArray){
+            if( letra < 50){
+                document.write(letra + "<br>")
+                
+            }else{
+                 continue;
+                
+            }
         }
-        console.log(numero);
-    }
-}
-    </script>
+        document.write("Es todo");
+    </script> 
 </body>
 </html>
