@@ -1,4 +1,18 @@
+function crearTiendas(contenedorID, min, cantidadTiendas){ 
+    //encontrar contendor por su 
+    let elementoContenedor = document.getElementById(contenedorID);
+    //bucle para crear las tiendas
+    for(let conteoTiendas=1; conteoTiendas<=cantidadTiendas; conteoTiendas++){
+     //crear texto label para poder llamar a funcion
+     let textoEtiqueta = "Tienda "+ conteoTiendas;
+     //crear tiendas con crearârrafotiendas
+     let parrafoTienda = crearParrafotienda(textoEtiqueta, min);
+     //agregar el parrafo al contendor
+     elementoContenedor.appendChild(parrafoTienda);
 
+    }
+
+}
 
 
 function crearParrafotienda(texoLabel, valorMin){
@@ -6,6 +20,7 @@ function crearParrafotienda(texoLabel, valorMin){
     let elementoParrafo = document.createElement("p");
     //crear la etiquet label
     let elementoEtiqueta = document.createElement("label");
+    elementoEtiqueta.innerText=texoLabel + ": "
 
     //conectar con el input
 
@@ -72,10 +87,10 @@ function ventaMayor(array){
 function ventaMenor(array){
         let venta = array[0]
         for(let numero of array){
-            if(venta < numero){
+            if(numero < venta){
                 venta = numero;
             }
         }
         return venta;
-    }
+}
     
