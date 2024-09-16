@@ -1,3 +1,31 @@
+function crearParrafotienda(texoLabel, valorMin){
+    //crear las etiquetas de párrafo
+    let elementoParrafo = document.createElement("p");
+    //crear la etiquet label
+    let elementoEtiqueta = document.createElement("label");
+
+    //conectar con el input
+
+    elementoEtiqueta.setAttribute("for",texoLabel);
+
+    //crear el input
+    let elementoInput = document.createElement("input");
+    //establecer elemento input 
+    elementoInput.setAttribute("type","number");
+    elementoEtiqueta.setAttribute("id",texoLabel);
+    elementoInput.setAttribute("min", valorMin);
+    elementoInput.setAttribute("value", 0);
+
+    //agregar label e input al parrafo
+    elementoParrafo.appendChild(elementoEtiqueta);
+    elementoParrafo.appendChild(elementoInput);
+    //devolver el párrafo completo
+    return elementoParrafo;
+}
+
+
+
+
 function extraerNumeroDesdeElemento(elemento){
     let miElemento= document.getElementById(elemento);
     let miTexto=miElemento.value;
