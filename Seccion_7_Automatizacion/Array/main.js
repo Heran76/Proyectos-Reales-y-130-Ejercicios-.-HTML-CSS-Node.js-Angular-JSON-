@@ -9,12 +9,12 @@ function extraerNumeroDesdeElemento(elemento){
 function calcular(){
     let venta=[];
     
-    ventas[0]=extraerNumeroDesdeElemento("ventasTienda1");
-    ventas[1]=extraerNumeroDesdeElemento("ventasTienda2");
-    ventas[2]=extraerNumeroDesdeElemento("ventasTienda3");
-    ventas[3]=extraerNumeroDesdeElemento("ventasTienda4");
-    ventas[4]=extraerNumeroDesdeElemento("ventasTienda5");
-    ventas[5]=extraerNumeroDesdeElemento("ventasTienda6");
+    venta[0]=extraerNumeroDesdeElemento("ventasTienda1");
+    venta[1]=extraerNumeroDesdeElemento("ventasTienda2");
+    venta[2]=extraerNumeroDesdeElemento("ventasTienda3");
+    venta[3]=extraerNumeroDesdeElemento("ventasTienda4");
+    venta[4]=extraerNumeroDesdeElemento("ventasTienda5");
+    venta[5]=extraerNumeroDesdeElemento("ventasTienda6");
 
     let totalventas = ventasTotal(ventas);
     let totalMayor = ventaMayor(ventas);
