@@ -3,23 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>agregar</title>
+    <title>Document</title>
 </head>
 <body>
-   <script>
-        let perro = {
-            Nombre : "Diana",
+    <script>
+        let perro ={
+            nombre : "Diana",
             raza : "Coquer",
             edad : 4,
             ladrar(){
                 console.log("Guau")
+            },
+            saludar(){
+                console.log("Hola me llamo "+ this.nombre);
             }
         }
-        perro["ColorOjos"] = "Marrones";
-        function cumpleAnio(){
-            perro.edad = perro.edad + 1;
-        }
-   </script>
-   
+    </script>
 </body>
 </html>
