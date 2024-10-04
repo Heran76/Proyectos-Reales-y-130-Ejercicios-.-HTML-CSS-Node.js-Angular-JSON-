@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Date</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body onload="comenzarReloj()">
+    <div>
+        <p id="fecha">Relog // Alarma</p>
+        <input type="number" name="" id="tiempoElejido">
+        <button onclick="alarma()">Activar Alarma</button>
+        <button onclick="resetAlarma()">Parar Alarma</button>
+        <h2 id="reloj">00:00:00</h2>
+        <audio src="alarma.mp3" id="sonido"></audio>
+    </div>
+</body>
+</html>
