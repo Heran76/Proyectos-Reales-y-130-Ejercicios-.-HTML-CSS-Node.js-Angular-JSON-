@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0; 
+}
+
+button{
+    background-color: green;
+    color:aliceblue;
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow:2px 4px 6px rgb(31, 30, 30);
+}
+
+button:hover{
+    background-color: aliceblue;
+    color: forestgreen;
+    border: none;
+    box-shadow: inset 2px 4px 6px rgb(31, 30, 30);
+}

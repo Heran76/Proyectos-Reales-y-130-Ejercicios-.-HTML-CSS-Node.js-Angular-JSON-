@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: rgb(46,83,84);
+    
+}
+div{
+    background-color: rgb(197, 201, 201);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color:rgb(63, 66, 68)
+}
+
+button:hover{
+    cursor: pointer;
+    background-color:rgb(46,83,84);
+    color:aliceblue;
+    border-radius: 5px;
+}
