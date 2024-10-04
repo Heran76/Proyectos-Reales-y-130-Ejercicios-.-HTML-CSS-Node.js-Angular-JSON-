@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for in</title>
+</head>
+<body>
+    <script>
+        function Perro(nombre,edad){
+            this.nombre = "Diana";
+            this.raza = "Coquer";
+            this.edad = 4;
+            this.ladrar=function(){
+                console.log("Guau");
+            };
+           this.saludar=function(){
+            console.log("Hola me llamo" + this.nombre);
+           }
+        }
+        let simba = new Perro("shin, tzu",4);
+        let reina = new Perro("caniche", 15);
+        let batu = new Perro("Cruza", 8);
+
+        for(let item in reina){
+            console.log(item + ": "+reina[item]);
+        }
+    </script>
+    
+</body>
+</html>
